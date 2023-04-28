@@ -8,7 +8,7 @@ prices=(price_1N1aqAIy2mCtTxFu1iIFS5pH price_1N1aqAIy2mCtTxFu3Xh4LCHg price_1N1a
 datetime=("Sun Jan 01 07:00:00 GMT 2023" "Wed Feb 01 07:00:00 GMT 2023" "Wed Mar 01 07:00:00 GMT 2023")
 count=1
 
-echo "no.,cus_id,cus_name,price_id,sub_id,start_date,sub_item_id" > log.csv
+echo "no.,cus_id,cus_name,price_id,sub_id,start_date,sub_item_id,test_clock_id" > log.csv
 
 
 create_testclock () {
@@ -86,7 +86,7 @@ for price in ${prices[@]}; do
             SUB_ID=$(echo $SUBSCRIPTION | jq '.id'| sed "s/\"//g")
             SUB_ITEM_ID=$(echo $SUBSCRIPTION | jq ".items" | jq ".data" | jq -r ".[0].id")
 
-            echo "$count,$CUS_ID,$CUS_FullName,$price,$SUB_ID,$date,$SUB_ITEM_ID" >> log.csv
+            echo "$count,$CUS_ID,$CUS_FullName,$price,$SUB_ID,$date,$SUB_ITEM_ID,$TEST_CLOCK_ID" >> log.csv
 
             ((count++))
   
