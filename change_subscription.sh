@@ -25,7 +25,7 @@ change_subscription () {
 
 while IFS="," read -r no cus_id cus_name price_id sub_id start_date sub_item_id; do
 
-    echo $no $cus_id $cus_name $price_id $sub_id $start_date $sub_item_id
+    # echo $no $cus_id $cus_name $price_id $sub_id $start_date $sub_item_id
 
     case $price_id in
 
