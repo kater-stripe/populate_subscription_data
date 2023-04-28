@@ -1,7 +1,7 @@
 #!/bin/bash
 
 API_KEY=sk_test_51J5TgEIy2mCtTxFuop6FwXSO8Et7l7BWg6uCG0NVxvVtaylhlNsrGbDDiDeuMNt7eElRUbwuev37KVXEFlTQ8I8W00ytbBzRid
-prices=(price_1N1aqAIy2mCtTxFu3Xh4LCHg price_1N1aqAIy2mCtTxFuEOMfkWcu price_1N1aqAIy2mCtTxFu1iIFS5pH) 
+prices=(price_1N1aqAIy2mCtTxFu1iIFS5pH price_1N1aqAIy2mCtTxFu3Xh4LCHg price_1N1aqAIy2mCtTxFuEOMfkWcu) 
 LOG_FILE=log.csv
 
 echo "no.,cus_id,cus_name,price_id,sub_id,start_date,sub_item_id,new_price_id" > change_log.csv
@@ -29,18 +29,18 @@ while IFS="," read -r no cus_id cus_name price_id sub_id start_date sub_item_id;
 
     case $price_id in
 
-        ${prices[0]}) #200 
+        ${prices[0]}) #100 
             change_subscription $sub_item_id ${prices[1]} 
             echo "$no,$cus_id,$cus_name,$price_id,$sub_id,$start_date,$sub_item_id,$new_price_id" >> change_log.csv
         ;;
 
-         ${prices[1]}) #300
+         ${prices[1]}) #200
             change_subscription $sub_item_id ${prices[2]}
             echo "$no,$cus_id,$cus_name,$price_id,$sub_id,$start_date,$sub_item_id,$new_price_id" >> change_log.csv
         ;;
 
-        ${prices[2]}) #100
-            change_subscription $sub_item_id ${prices[1]}
+        ${prices[2]}) #300
+            change_subscription $sub_item_id ${prices[0]}
             echo "$no,$cus_id,$cus_name,$price_id,$sub_id,$start_date,$sub_item_id,$new_price_id" >> change_log.csv
         ;;
 
