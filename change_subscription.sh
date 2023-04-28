@@ -1,7 +1,7 @@
 #!/bin/bash
 
 API_KEY=ADDSECRETKEY
-prices=(price_1N1aqAIy2mCtTxFu1iIFS5pH price_1N1aqAIy2mCtTxFu3Xh4LCHg price_1N1aqAIy2mCtTxFuEOMfkWcu) #update prices for subscriptions
+prices=(price_1N1aqAIy2mCtTxFu1iIFS5pH price_1N1aqAIy2mCtTxFu3Xh4LCHg price_1N1aqAIy2mCtTxFuEOMfkWcu) #add prices for subscriptions from Dashboard
 LOG_FILE=log.csv
 
 echo "no.,cus_id,cus_name,price_id,sub_id,start_date,sub_item_id,new_price_id" > change_log.csv
