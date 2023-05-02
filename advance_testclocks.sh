@@ -1,7 +1,7 @@
 #!/bin/bash
 
-API_KEY=sk_test_51J5TgEIy2mCtTxFuop6FwXSO8Et7l7BWg6uCG0NVxvVtaylhlNsrGbDDiDeuMNt7eElRUbwuev37KVXEFlTQ8I8W00ytbBzRid
-prices=(price_1N1aqAIy2mCtTxFu1iIFS5pH price_1N1aqAIy2mCtTxFu3Xh4LCHg price_1N1aqAIy2mCtTxFuEOMfkWcu) 
+API_KEY=ADDSECRETKEY
+prices=(price_1N1aqAIy2mCtTxFu1iIFS5pH price_1N1aqAIy2mCtTxFu3Xh4LCHg price_1N1aqAIy2mCtTxFuEOMfkWcu) #add prices for subscriptions from Dashboard
 startdate=("Sun Jan 01 07:00:00 GMT 2023" "Wed Feb 01 07:00:00 GMT 2023" "Wed Mar 01 07:00:00 GMT 2023")
 newdate=("Wed Mar 01 07:00:00 GMT 2023" "Sat Apr 01 07:00:00 GMT 2023" "Mon May 01 07:00:00 GMT 2023")
 LOG_FILE=log.csv
