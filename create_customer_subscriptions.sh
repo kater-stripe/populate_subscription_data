@@ -33,7 +33,7 @@ create_testclock () {
 
 create_customer () {
 
-    TEST_CLOCK=$(echo "$1" | sed "s/\"//g" | sed "s/ //g") 
+    TEST_CLOCK=$(echo "$1" | sed "s/\"//g; s/ //g") 
 
     cus_data=$(curl https://api.namefake.com/)
     
