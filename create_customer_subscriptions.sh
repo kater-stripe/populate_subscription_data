@@ -83,7 +83,7 @@ for price in ${prices[@]}; do
                 -d "items[0][price]"="$price")
 
             SUB_ID=$(echo $SUBSCRIPTION | jq '.id'| sed "s/\"//g")
-            SUB_ITEM_ID=$(echo $SUBSCRIPTION | jq ".items" | jq ".data" | jq -r ".[0].id")
+            SUB_ITEM_ID=$(echo $SUBSCRIPTION | jq ".items | .data | .[0].id")
 
             echo "$count,$CUS_ID,$CUS_FullName,$price,$SUB_ID,$date,$SUB_ITEM_ID,$TEST_CLOCK_ID" >> log.csv
 
