@@ -12,7 +12,7 @@ change_subscription () {
     -u $API_KEY:  \
     -d "price"="$2")
 
-    new_price_id=$(echo $change_subscription | jq ".price" | jq ".id" | sed "s/\"//g")
+    new_price_id=$(echo $change_subscription | jq ".price | .id" | sed "s/\"//g")
 
     if [ -z "$new_price_id" ]; then
         echo 'no new price id found'
