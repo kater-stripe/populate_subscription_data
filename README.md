@@ -1,5 +1,5 @@
 # populate_subscription_data
-bash scripts to populate subscription on a Stripe account
+bash scripts to create test subscription data on a Stripe account to simulate upgrade/downgrade/cancellations for Revenue Recognition reports. 
 
 
  
