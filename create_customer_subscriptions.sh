@@ -41,8 +41,8 @@ create_customer () {
     CUS_NAME=$(echo "$name" | sed "s/\"//g") 
 
     email="$(echo $cus_data | jq '.email_u')"@"$(echo $cus_data | jq '.email_d')"
-    CUS_EMAIL=$(echo "$email" | sed "s/\"//g" | sed "s/ //g") 
-    
+    CUS_EMAIL=$(echo "$email" | sed "s/\"//g; s/ //g")
+
     CUSTOMER=$(curl -X POST "https://api.stripe.com/v1/customers" \
     -u $API_KEY:  \
     -d "name"="$CUS_NAME" \
