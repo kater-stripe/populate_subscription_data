@@ -1,11 +1,10 @@
 #!/bin/bash
 
 # ACCOUNT_ID=acct_1J5TgEIy2mCtTxFu
-API_KEY=sk_test_51J5TgEIy2mCtTxFuop6FwXSO8Et7l7BWg6uCG0NVxvVtaylhlNsrGbDDiDeuMNt7eElRUbwuev37KVXEFlTQ8I8W00ytbBzRid
+API_KEY=YOUR_SECRET_KEY
 
-product_id=prod_NnBCKM0Eah2OSz
-prices=(price_1N1aqAIy2mCtTxFu1iIFS5pH price_1N1aqAIy2mCtTxFu3Xh4LCHg price_1N1aqAIy2mCtTxFuEOMfkWcu) 
-datetime=("Sun Jan 01 07:00:00 GMT 2023" "Wed Feb 01 07:00:00 GMT 2023" "Wed Mar 01 07:00:00 GMT 2023")
+prices=(price_1N1aqAIy2mCtTxFu1iIFS5pH price_1N1aqAIy2mCtTxFu3Xh4LCHg price_1N1aqAIy2mCtTxFuEOMfkWcu) #update to add priceIDs
+datetime=("Sun Jan 01 07:00:00 GMT 2023" "Wed Feb 01 07:00:00 GMT 2023" "Wed Mar 01 07:00:00 GMT 2023") #add datetimes  
 count=1
 
 echo "no.,cus_id,cus_name,price_id,sub_id,start_date,sub_item_id,test_clock_id" > log.csv
