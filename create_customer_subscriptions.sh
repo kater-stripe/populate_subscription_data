@@ -36,9 +36,8 @@ create_customer () {
     TEST_CLOCK=$(echo "$1" | sed "s/\"//g" | sed "s/ //g") 
 
     cus_data=$(curl https://api.namefake.com/)
-
-    name="$(echo $cus_data | jq '.name')"
-    CUS_NAME=$(echo "$name" | sed "s/\"//g") 
+    
+    CUS_NAME="$(echo $cus_data | jq '.name' | sed "s/\"//g")"
 
     email="$(echo $cus_data | jq '.email_u')"@"$(echo $cus_data | jq '.email_d')"
     CUS_EMAIL=$(echo "$email" | sed "s/\"//g; s/ //g")
