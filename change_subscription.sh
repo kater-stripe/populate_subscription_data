@@ -29,18 +29,18 @@ while IFS="," read -r no cus_id cus_name price_id sub_id start_date sub_item_id;
 
     case $price_id in
 
-        ${prices[0]}) #100 
+        ${prices[0]}) #1st price Id from prices array 
             change_subscription $sub_item_id ${prices[1]} 
             echo "$no,$cus_id,$cus_name,$price_id,$sub_id,$start_date,$sub_item_id,$new_price_id" >> change_log.csv
         ;;
 
-         ${prices[1]}) #200
+         ${prices[1]}) #2nd price Id from prices array
             change_subscription $sub_item_id ${prices[2]}
             echo "$no,$cus_id,$cus_name,$price_id,$sub_id,$start_date,$sub_item_id,$new_price_id" >> change_log.csv
         ;;
 
-        ${prices[2]}) #300
-            change_subscription $sub_item_id ${prices[0]}
+        ${prices[2]}) #3rd price Id from prices array
+            change_subscription $sub_item_id ${prices[0]} 
             echo "$no,$cus_id,$cus_name,$price_id,$sub_id,$start_date,$sub_item_id,$new_price_id" >> change_log.csv
         ;;
 
