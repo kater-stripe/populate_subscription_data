@@ -17,4 +17,4 @@ Scripts 2-4 read the log.csv file created in Script 1
 #Manual tasks before running the scripts
 1. create product in the dashboard
 2. create price(s) associated to the product in the dashboard
-3. replace price IDs in the create_customer_subscription on line 6. Each price ID is separated by a space. 
+3. replace price IDs in the create_customer_subscriptions.sh on line 6. Each price ID is separated by a space. 
