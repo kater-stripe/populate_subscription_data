@@ -1,7 +1,7 @@
 #!/bin/bash
 
-API_KEY=sk_test_51J5TgEIy2mCtTxFuop6FwXSO8Et7l7BWg6uCG0NVxvVtaylhlNsrGbDDiDeuMNt7eElRUbwuev37KVXEFlTQ8I8W00ytbBzRid
-prices=(price_1N1aqAIy2mCtTxFu1iIFS5pH price_1N1aqAIy2mCtTxFu3Xh4LCHg price_1N1aqAIy2mCtTxFuEOMfkWcu) 
+API_KEY=ADDSECRETKEY
+prices=(price_1N1aqAIy2mCtTxFu1iIFS5pH price_1N1aqAIy2mCtTxFu3Xh4LCHg price_1N1aqAIy2mCtTxFuEOMfkWcu) #add prices for subscriptions from Dashboard 
 LOG_FILE=log.csv
 
 echo "no.,cus_id,cus_name,price_id,sub_id,start_date,sub_item_id,test_clock_id,sub_status" > cancel_log.csv
