@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# ACCOUNT_ID=acct_1J5TgEIy2mCtTxFu
+# ACCOUNT_ID=yourStripeAccountId for reference only
 API_KEY=YOUR_SECRET_KEY
 
 prices=(price_1N1aqAIy2mCtTxFu1iIFS5pH price_1N1aqAIy2mCtTxFu3Xh4LCHg price_1N1aqAIy2mCtTxFuEOMfkWcu) #update to add priceIDs
